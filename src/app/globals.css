@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 body{
-  @apply font-urbanist text-h3 
+  @apply font-urbanist text-h3 text-dark
 }
 h1{
   @apply text-h1 font-bold font-merryweather text-primary
