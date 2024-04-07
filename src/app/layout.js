@@ -1,5 +1,7 @@
 import { Merriweather, Urbanist } from "next/font/google";
 import "./globals.css";
+import Navbar from "@/components/Navbar";
+import Footer from "@/components/Footer";
 
 const merryweather = Merriweather({
   subsets: ["latin"],
@@ -21,7 +23,9 @@ export default function RootLayout({ children }) {
   return (
     <html lang="es">
       <body className={`${merryweather.variable} ${urbanist.variable}`}>
+        <Navbar />
         {children}
+        <Footer />
       </body>
     </html>
   );
