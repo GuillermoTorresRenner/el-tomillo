@@ -6,7 +6,7 @@ import Link from "next/link";
 import { useState } from "react";
 
 export default function Navbar() {
-  const [windowDimension, setWindowDimension] = useState(window);
+  const [windowDimension, setWindowDimension] = useState(false);
   const [navClasses, setNavClasses] = useState("w-full");
   //const [ navClasses, setNavClasses ] = useState("w-full justify-center items-center gap-x-8 space-x-4 flex-col lg:flex lg:flex-row")
 
