@@ -2,7 +2,6 @@ import { Merriweather, Urbanist } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
-import NavigationFAB from "@/components/NavigationFAB";
 
 const merryweather = Merriweather({
   subsets: ["latin"],
