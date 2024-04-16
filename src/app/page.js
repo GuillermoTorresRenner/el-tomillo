@@ -1,7 +1,7 @@
 export default function Home() {
   return (
-    <div>
-      <h1 className="text-center">El tomillo WEB PAGE</h1>
+    <div className="h-72">
+      <h1 className="mt-5 text-center">El Tomillo</h1>
     </div>
   );
 }
