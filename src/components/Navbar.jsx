@@ -17,7 +17,7 @@ export default function Navbar() {
   };
 
   return (
-    <div className="relative w-full">
+    <div className="relative w-full" id="navbar">
       <div>
         <Image
           src={"/images/bg_img.jpeg"}
