@@ -62,8 +62,9 @@ function Experiencia() {
       </div>
       <div className="flex justify-center mb-10 mt-5">
         <a
-          href="#"
+          href="https://wa.me/5492615970583?text=Quiero%20saber%20más%del%Tomillo"
           className="bg-white border border-primary rounded-2xl py-2 px-4 w-auto max-w-xs text-center"
+          target="_blank"
         >
           Consulta grilla de talleres disponibles
         </a>
