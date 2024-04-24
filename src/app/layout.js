@@ -29,6 +29,9 @@ export default function RootLayout({ children }) {
         <FabNavigation />
         <Footer />
       </body>
+
+      <script defer="" src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon="{'token': '783d6bd8aeed4644afcd0266c25e069f'}"></script>
+
     </html>
   );
 }
