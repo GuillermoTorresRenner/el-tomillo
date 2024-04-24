@@ -1,5 +1,5 @@
 import React from "react";
-import Card from "@/components/servicios/Card";
+import Card from "../../components/servicios/Card";
 import huertaUrbanaImg from "../../../public/images/servicios/huerta_urbana.png";
 import disenoEspaciosVerdes from "../../../public/images/servicios/diseno_espacios_verdes.png";
 import viveroArteanal from "../../../public/images/servicios/vivero_artesanal.png";
