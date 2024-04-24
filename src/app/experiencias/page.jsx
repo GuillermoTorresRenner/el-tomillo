@@ -1,4 +1,4 @@
-import Card from "@/components/experiencias/Card";
+import Card from "../../components/experiencias/Card";
 import React from "react";
 import Img1 from "../../../public/images/experiencias/img_card_1.png";
 import Img2 from "../../../public/images/experiencias/img_card_2.png";
@@ -10,7 +10,7 @@ function Experiencia() {
   return (
     <main className="mx-5 sm:mx-10">
       <h1 className="mt-5 text-center ">
-        Vive una experiencia punica con nuestros talleres
+        Vive una experiencia única con nuestros talleres
       </h1>
 
       <div className="flex justify-around border-2 rounded-2xl border-primary p-2  text-primary my-5">
