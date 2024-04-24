@@ -20,16 +20,19 @@ const Footer = () => {
             <h3 className="">Links</h3>
             <ul className="">
               <li>
-                <Link href="/">Sobre mí</Link>
+                <Link href="/">Home</Link>
+              </li>
+              <li>
+                <Link href="/sobremi">Sobre mí</Link>
               </li>
               <li>
                 <Link href="/servicios">Servicios</Link>
               </li>
               <li>
-                <Link href="/productos">Productos</Link>
+                <Link href="/experiancias">Experiencias y Talleres</Link>
               </li>
               <li>
-                <Link href="/actividades">Actividades</Link>
+                <Link href="/recursos">Recursos</Link>
               </li>
               <li>
                 <a
