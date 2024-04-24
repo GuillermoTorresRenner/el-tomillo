@@ -20,6 +20,7 @@ const Footer = () => {
             <h3 className="">Links</h3>
             <ul className="">
               <li>
+
             <Link href="/">Home/Link>
           </li>
           <li>
@@ -33,6 +34,7 @@ const Footer = () => {
           <li>
             <Link href="/recursos">Recursos</Link>
           </li>
+
                 <a
                   href="https://wa.me/5492615970583?text=Quiero%20saber%20más%del%Tomillo"
                   target="_blank"

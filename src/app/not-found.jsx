@@ -17,15 +17,21 @@ const NotFound = () => {
         </h3>
         <ul className="mt-5 mb-20">
           <li>
-            <Link href="/">Home/Link>
+            <Link href="/">Home</Link>
+          </li>
+          <li>
+
           </li>
           <li>
             <Link href="/sobremi">Sobre mí</Link>
           </li>
           <li>
+
+            <Link href="/experiancias">Experiencias y Talleres</Link>
+
             <Link href="/servicios">Servicios</Link>
-          </li><li>
-            <Link href="/experiencias">Experiencias y talleres</Link>
+          
+          
           </li>
           <li>
             <Link href="/recursos">Recursos</Link>
