@@ -90,7 +90,7 @@ export default function Navbar() {
       </div>
 
       {isHome ? (
-        <div className="absolute top-1/5 md:top-80 w-full h-full">
+        <div className="absolute top-1/5 md:top-80 w-full h-full hidden sm:block">
           <h2 className="text-white text-center">Conexion con la naturaleza</h2>
           <h2 className="text-white text-center">al ritmo de la ciudad</h2>
         </div>
