@@ -21,22 +21,24 @@ const Footer = () => {
             <ul className="">
               <li>
 
-            <Link href="/">Home/Link>
-          </li>
-          <li>
-            <Link href="/sobremi">Sobre mí</Link>
-          </li>
-          <li>
-            <Link href="/servicios">Servicios</Link>
-          </li><li>
-            <Link href="/experiencias">Experiencias y talleres</Link>
-          </li>
-          <li>
-            <Link href="/recursos">Recursos</Link>
-          </li>
+                <Link href="/">Home</Link>
+              </li>
+              <li>
+                <Link href="/sobremi">Sobre mí</Link>
+              </li>
+              <li>
+                <Link href="/servicios">Servicios</Link>
+              </li>
+              <li>
+                <Link href="/experiencias">Talleres</Link>
+              </li>
+              <li>
+                <Link href="/recursos">Recursos</Link>
+              </li>
+              <li>
 
                 <a
-                  href="https://wa.me/5492615970583?text=Quiero%20saber%20más%del%Tomillo"
+                  href="https://wa.me/5492615970583?text=Quiero%20saber%20m%C3%A1s%20del%20espacio%20agrourbano%20El%20Tomillo."
                   target="_blank"
                 >
                   Contacto
@@ -71,7 +73,7 @@ const Footer = () => {
                     <FaInstagram />
                   </a>
                   <a
-                    href="https://wa.me/5492615970583?text=Quiero%20saber%20más%del%Tomillo"
+                    href="https://wa.me/5492615970583?text=Quiero%20saber%20m%C3%A1s%20del%20espacio%20agrourbano%20El%20Tomillo."
                     target="_blank"
                   >
                     <FaWhatsapp />
@@ -117,7 +119,7 @@ const Footer = () => {
             <FaInstagram />
           </a>
           <a
-            href="https://wa.me/5492615970583?text=Quiero%20saber%20más%del%Tomillo"
+            href="https://wa.me/5492615970583?text=Quiero%20saber%20m%C3%A1s%20del%20espacio%20agrourbano%20El%20Tomillo."
             target="_blank"
           >
             <FaWhatsapp />
