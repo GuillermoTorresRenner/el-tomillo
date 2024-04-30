@@ -16,36 +16,36 @@ export default function Navbar() {
   useEffect(() => {
     switch (path) {
       case "/":
-        setHeaderBGImage("/images/bg_img_inicio.png");
+        setHeaderBGImage("/images/navbar/bg_img_inicio.png");
         setIsHome(true);
         break;
 
       case "/sobremi":
-        setHeaderBGImage("/images/bg_img_sobre.png");
+        setHeaderBGImage("/images/navbar/bg_img_sobre.png");
         setHeaderBanner("Sobre mi");
         setIsHome(false);
         break;
 
       case "/servicios":
-        setHeaderBGImage("/images/bg_img_servicios.png");
+        setHeaderBGImage("/images/navbar/bg_img_servicios.png");
         setHeaderBanner("Servicios");
         setIsHome(false);
         break;
 
       case "/recursos":
-        setHeaderBGImage("/images/bg_img_recursos.png");
+        setHeaderBGImage("/images/navbar/bg_img_recursos.png");
         setHeaderBanner("Recursos");
         setIsHome(false);
         break;
 
       case "/experiencias":
-        setHeaderBGImage("/images/bg_img_experiencias.png");
+        setHeaderBGImage("/images/navbar/bg_img_experiencias.png");
         setHeaderBanner("Experiencias y Talleres");
         setIsHome(false);
         break;
 
       default:
-        setHeaderBGImage("/images/bg_img_sobre.png");
+        setHeaderBGImage("/images/navbar/bg_img_sobre.png");
         setIsHome(false);
     }
   }, [path]);
@@ -65,8 +65,8 @@ export default function Navbar() {
   const linkButtonClasses =
     "flex justify-center items-center border border-1 rounded-lg px-6 py-2 hover:border-primary hover:bg-secondary text-white text-caption hover:text-black";
 
-  const open_menu_icon = "/images/nav_menu_icon_open.png";
-  const close_menu_icon = "/images/nav_menu_icon_close.png";
+  const open_menu_icon = "/images/navbar/nav_menu_icon_open.png";
+  const close_menu_icon = "/images/navbar/nav_menu_icon_close.png";
 
   const [isOpen, setIsOpen] = useState(false);
 
@@ -104,7 +104,7 @@ export default function Navbar() {
         {/* En vista desktop el logo es de color blanco  */}
         <Link className="hidden md:block relative mx-50" href="/">
           <Image
-            src={"/images/el_tomillo_header_img.png"}
+            src={"/images/navbar/el_tomillo_header_img.png"}
             width={90}
             height={90}
             alt="El Tomillo logo"
@@ -116,8 +116,8 @@ export default function Navbar() {
           <Image
             src={
               isOpen
-                ? "/images/el_tomillo_header_img.png"
-                : "/images/el_tomillo_header_img_green.png"
+                ? "/images/navbar/el_tomillo_header_img.png"
+                : "/images/navbar/el_tomillo_header_img_green.png"
             }
             width={90}
             height={90}

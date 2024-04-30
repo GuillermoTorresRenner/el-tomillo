@@ -1,20 +1,10 @@
 import React from 'react'
 import Image from 'next/image'
 import Card from '@/components/sobremi/Card'
-import { Carousel } from '@/components/sobremi/Carousel'
 
-const sobremi = () => {
+const Sobremi = () => {
 
-	const images = [
-		'/images/inicio_gallery_img1.png',
-		'/images/inicio_gallery_img2.png',
-		'/images/inicio_gallery_img3.png',
-		'/images/inicio_gallery_img1.png',
-		'/images/inicio_gallery_img2.png',
-		'/images/inicio_gallery_img3.png'
-	]
-
-    return (
+	return (
 
         <div className="">
 
@@ -30,7 +20,7 @@ const sobremi = () => {
 				<div>
 					<Image
 						className='rounded rounded-2xl'
-						src="/images/img_sobremi_mlc.png"
+						src="/images/sobremi/img_sobremi_mlc.png"
 						alt=""
 						width={600}
 						height={600}
@@ -50,8 +40,6 @@ const sobremi = () => {
 							<p>Te cuento un poco sobre mi</p>
 						</button>
 					</div>
-
-
 					
 					<div className='w-full flex flex-col justify-center items-center md:items-start my-8'>
 						<p className='text-button md:text-caption text-center md:text-start'> ¡Hola! Soy Laura, creadora de <strong><i>El Tomillo Espacio Agrourbano</i></strong>, un espacio donde la naturaleza y la ciudad coexisten. </p>
@@ -71,14 +59,14 @@ const sobremi = () => {
 
 					<div className='flex'>
 						<Card
-							iconUrl={'/images/card_cultivation_icon.svg'}
+							iconUrl={'/images/sobremi/card_cultivation_icon.svg'}
 							startText={'Cultivar plantas, '}
 							boldtext={'generar experiencias y '}
 							endText={'y tejer vinculos de trabajo.'}
 						/>
 						
 						<Card
-							iconUrl={'/images/card_love_icon.svg'}
+							iconUrl={'/images/sobremi/card_love_icon.svg'}
 							startText={'Ayudar a logra una mayor '}
 							boldtext={'conexion '}
 							endText={'con la naturaleza.'}
@@ -87,14 +75,14 @@ const sobremi = () => {
 
 					<div className='flex'>
 						<Card
-							iconUrl={'/images/card_balance_icon.svg'}
+							iconUrl={'/images/sobremi/card_balance_icon.svg'}
 							startText={'Guiar en la busqueda del '}
 							boldtext={'equilibrio '}
 							endText={'hacia un buen futuro.'}
 						/>
 						
 						<Card
-							iconUrl={'/images/card_nature_icon.svg'}
+							iconUrl={'/images/sobremi/card_nature_icon.svg'}
 							startText={'Apostar por el aprendizaje y '}
 							boldtext={'compartir '}
 							endText={'conocimientos.'}
@@ -116,11 +104,11 @@ const sobremi = () => {
 
 					<ul className='w-full'>
 						<li className='flex items-center gap-4 my-2'>
-							<Image src='/images/white_arrow_down.svg' alt='white arrow' width={20} height={20}/>
+							<Image src='/images/sobremi/white_arrow_down.svg' alt='white arrow' width={20} height={20}/>
 							<span className='text-white text-button'>Perspectiva ambiental</span>
 						</li>
 						<li className='flex items-center gap-4 '>
-						<Image src='/images/white_arrow_down.svg' alt='white arrow' width={20} height={20}/>
+						<Image src='/images/sobremi/white_arrow_down.svg' alt='white arrow' width={20} height={20}/>
 							<span className='text-white text-button'>Perspectiva social</span>
 						</li>						
 					</ul>
@@ -129,17 +117,17 @@ const sobremi = () => {
 
 				{/* Div Image */}
 				<div className='flex flex-col justify-center items-center px-0 md:px-12 w-full md:w-1/2'>
-					<Image className='rounded rounded-0 md:rounded-2xl m-0 md:m-4' src='/images/img_sobremi_ideologia.png' alt='' width={700} height={700} />
+					<Image className='rounded rounded-0 md:rounded-2xl m-0 md:m-4' src='/images/sobremi/img_sobremi_ideologia.png' alt='' width={700} height={700} />
 				</div>
 
 			</section>
 
 			<section id='gallery' className=''>
-				<Carousel images={images} />				
+				{/* PENDIENTE GALLERY */}
 			</section>
 
         </div>
     )
 }
 
-export default sobremi
+export default Sobremi
