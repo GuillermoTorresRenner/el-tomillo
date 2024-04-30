@@ -164,7 +164,7 @@ export default function Navbar() {
         <div className="block md:hidden">
           <button
             type="button"
-            class="bg-[#EAE3C000] hover:bg-[#24292F]/90 rounded-lg text-sm px-.5 py-.5 dark:focus:ring-gray-500 dark:hover:bg-[#050708]/30"
+            className="bg-[#EAE3C000] hover:bg-[#24292F]/90 rounded-lg text-sm px-.5 py-.5 dark:focus:ring-gray-500 dark:hover:bg-[#050708]/30"
             onClick={() => {
               toggleVisibility();
             }}
