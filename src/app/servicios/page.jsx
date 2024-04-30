@@ -1,7 +1,7 @@
 import React from "react";
 import Card from "../../components/servicios/Card";
 import huertaUrbanaImg from "../../../public/images/servicios/huerta_urbana.png";
-import disenoEspaciosVerdes from "../../../public/images/servicios/diseno_espacios_verdes.png";
+import disenoEspaciosVerdes from "../../../public/images/servicios/espacios_verdes.png";
 import viveroArteanal from "../../../public/images/servicios/vivero_artesanal.png";
 
 const Servicios = () => {
@@ -48,7 +48,6 @@ const Servicios = () => {
         list={[
           "¿Qué incluye? Gestión del diseño y para la posterior ejecución.",
           "¿Cuánto tiempo toma? Dependiendo del tamaño del proyecto.",
-
           "¿En dónde? Ciudad de Mendoza y alrededores.",
         ]}
       />
