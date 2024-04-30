@@ -9,7 +9,7 @@ const Card = ({
   text,
   list,
   href = "https://wa.me/5492615970583?text=Quiero%20saber%20más%del%Tomillo",
-  btnText = "Pídenos un presupuesto",
+  btnText = "Solicita un presupuesto",
 }) => {
   return (
     <div className="border border-gray-400 rounded-2xl my-5">

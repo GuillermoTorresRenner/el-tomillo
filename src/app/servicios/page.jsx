@@ -1,7 +1,7 @@
 import React from "react";
 import Card from "../../components/servicios/Card";
 import huertaUrbanaImg from "../../../public/images/servicios/huerta_urbana.png";
-import disenoEspaciosVerdes from "../../../public/images/servicios/diseno_espacios_verdes.png";
+import disenoEspaciosVerdes from "../../../public/images/servicios/espacios_verdes.png";
 import viveroArteanal from "../../../public/images/servicios/vivero_artesanal.png";
 
 const Servicios = () => {
@@ -40,15 +40,13 @@ const Servicios = () => {
       <Card
         alt={"Imagen diseño de espacios verdes"}
         src={disenoEspaciosVerdes}
-        title={"Diseño de jardines residenciales y otros espacios verdes"}
-        subtitle={
-          "Gestión proyectos de agricultura urbana en el ámbito público y privado."
-        }
+        title={"Diseño de espacios verdes"}
+        subtitle={"Diseño de jardines residenciales y otros espacios verdes."}
         text={
           "Diseñamos jardines residenciales con una impronta ecológica de acuerdo a tu espacio y necesidades. Priorizamos el cuidado del ambiente en cada diseño y te asesoramos en la selección de plantas, macetas y otras decoraciones; buscando la mejor distribución de especies para que las plantas permanezcan sanas y vibrantes de manera orgánica. "
         }
         list={[
-          "¿Qué incluye? Gestión del diseño y la ejecución.",
+          "¿Qué incluye? Gestión del diseño y para la posterior ejecución.",
           "¿Cuánto tiempo toma? Dependiendo del tamaño del proyecto.",
           "¿En dónde? Ciudad de Mendoza y alrededores.",
         ]}
