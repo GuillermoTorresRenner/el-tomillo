@@ -20,17 +20,23 @@ const NotFound = () => {
             <Link href="/">Home</Link>
           </li>
           <li>
+
+          </li>
+          <li>
             <Link href="/sobremi">Sobre mí</Link>
           </li>
           <li>
-            <Link href="/servicios">Servicios</Link>
-          </li>
-          <li>
+
             <Link href="/experiancias">Experiencias y Talleres</Link>
+
+            <Link href="/servicios">Servicios</Link>
+          
+          
           </li>
           <li>
             <Link href="/recursos">Recursos</Link>
           </li>
+          
         </ul>
       </div>
       <Image
