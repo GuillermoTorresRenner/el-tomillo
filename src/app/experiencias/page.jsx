@@ -13,10 +13,14 @@ function Experiencia() {
         Vive una experiencia única con nuestros talleres
       </h1>
 
-      <div className="flex justify-around border-2 rounded-2xl border-primary p-2  text-primary my-5">
-        <div className="font-bold">Experiencias y talleres</div>
-        <div>|</div>
-        <div>Recursos online</div>
+      <div className="flex justify-center">
+        <div className="w-1/2">
+          <div className="flex justify-around border-2 rounded-2xl border-primary p-2 text-primary my-5">
+            <div className="font-bold">Experiencias y talleres</div>
+            <div>|</div>
+            <div>Recursos online</div>
+          </div>
+        </div>
       </div>
       <div className="sm:grid md:grid-cols-2 md:gap-2 mb-5">
         <Card
@@ -40,7 +44,7 @@ function Experiencia() {
           alt={"Jardinería y huertas"}
           title={"Jardinería y huertas"}
           text={
-            "Experiencia vivencial que busca generar un contexto externo y emocional permitiéndote re-conectar y vivenciar la naturaleza que somos."
+            "A través de distintas técnicas, aprenderás cómo armar tu huerta urbana o realizar tus propias plantas y terrarios."
           }
         />
         <Card
@@ -48,7 +52,7 @@ function Experiencia() {
           alt={"Pintura de macetas"}
           title={"Pintura de macetas"}
           text={
-            "Aprende a realizar una Kokedama desde cero, en el taller aprenderás el arte de tener tu planta en una maceta completamente natural."
+            "Te enseñaremos distintas técnicas de pintura para que puedas darle vida a tus macetas."
           }
         />
         <Card
@@ -56,7 +60,7 @@ function Experiencia() {
           alt={"Mosaiquismo"}
           title={"Mosaiquismo"}
           text={
-            "Aprende a realizar una Kokedama desde cero, en el taller aprenderás el arte de tener tu planta en una maceta completamente natural."
+            "En este taller aprenderás a intervenir objetos con la técnica de mosaiquismo. Podrás reutilizar algunos objetos y darle una nueva vuelta."
           }
         />
       </div>
