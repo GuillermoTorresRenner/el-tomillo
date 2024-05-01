@@ -15,7 +15,6 @@ const Card = ({
     <div className="border border-gray-400 rounded-2xl my-5">
       <div className="relative my-10">
         <Image src={src} alt={alt} className="w-full h-full object-cover" />
-        {/* Contenedor para el texto con fondo transparente y desenfocado */}
         <div className="absolute bottom-0 right-0 bg-opacity-25 backdrop-blur-sm p-4 rounded-lg w-2/3 md:w-1/2">
           <p className="text-white font-bold text-md sm:text-h3 md:text-5xl">
             {title}
