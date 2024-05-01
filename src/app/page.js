@@ -6,14 +6,6 @@ import AccordionGallery from '@/components/inicio/AccordionGallery';
 
 export default function Home() {
 
-	const slides = [
-        '/images/inicio/inicio_productos_insumos.png',
-        '/images/inicio/inicio_productos_macetas.png',
-        '/images/inicio/inicio_productos_plantasExterior.png',
-        '/images/inicio/inicio_productos_plantasKokedamas.png',
-        '/images/inicio/inicio_productos_catalogoConsciente.png',
-    ]
-
 	return (
 		<div className="">
 
@@ -84,17 +76,6 @@ export default function Home() {
 						title={'Diseño de huertas urbanas'}
 						description={'En esta parte de la tarjeta debería ir una descripción.'}
 					/>
-					{/* <FlipCard1 
-						bg_image={'/images/inicio/inicio_servicios_img2.png'}
-						title={'Diseño de espacios verdes'}
-						description={'En esta parte de la tarjeta debería ir una descripción.'}
-					/>
-					<FlipCard1 
-						bg_image={'/images/inicio/inicio_servicios_img3.png'}
-						title={'Vivero artesanal'}
-						description={'En esta parte de la tarjeta debería ir una descripción.'}
-					/> */}
-
 				</div>
 
 				<div className='flex justify-center items-center mb-6'>
@@ -107,10 +88,9 @@ export default function Home() {
 
 			</section>
 
-			<section id="productos">
-			</section>
+			
 
-			<section id="experiencia" className='hidden md:block relative my-12 overflow-hidden'>
+			<section id="experiencia" className='hidden md:block relative my-6 overflow-hidden'>
 				<Image src="/images/inicio/inicio_vive_una_experiencia.png" alt="" width={1900} height={600}/>
 				<div className='absolute w-full sm:w-3/4 md:w-2/5 -bottom-5 right-0 bg-primary opacity-90 flex flex-col p-16 rounded rounded-s-3xl'>
 					<span className='text-white text-subhead md:text-h2 font-merryweather font-bold'>Vive una experiencia única con nuestros talleres</span>
@@ -133,37 +113,37 @@ export default function Home() {
 					<FlipCard2
 						bg_image={'/images/inicio/inicio_servicios_img3.png'}
 						title={'La huerta urbana'}
-						description={'Ven a cultivar conmigo y aprende como empezar a cuidar una huerta durante todo el año.'}
+						description={'Vení y huertá con nosotras. Visitá nuestra educativa y aprende a tener tu propia huerta urbana.'}
 					/>
 
 					<FlipCard2
 						bg_image={'/images/inicio/inicio_proyectos_img2.png'}
 						title={'Vivero circular'}
-						description={'En esta parte de la tarjeta debería ir una descripción.'}
+						description={'Vendé tus plantas con nosotras. Podés traernos tus plantas y utilizar nuestras redes para la venta, fomentando una economía más colaborativa. Mientras, nosotras las cuidamos en el vivero.'}
 					/>
 
 					<FlipCard2
 						bg_image={'/images/inicio/inicio_proyectos_img3.png'}
 						title={'Mi mundo verde'}
-						description={'En esta parte de la tarjeta debería ir una descripción.'}
+						description={'Te compartiré pequeños tips para que puedas llevar una vida más sustentable, aun en la ciudad.'}
 					/>
 
 					<FlipCard2
 						bg_image={'/images/inicio/inicio_proyectos_img4.png'}
 						title={'Paneles verticales'}
-						description={'En esta parte de la tarjeta debería ir una descripción.'}
+						description={'Bajo el lema "Menos plástico...Más Vida". Disponé de Naturaleza inmediata y tomá conciencia de la importancia de la reutilización del plastico.'}
 					/>
 
 					<FlipCard2
 						bg_image={'/images/inicio/inicio_proyectos_img5.png'}
 						title={'Naturaleza online'}
-						description={'En esta parte de la tarjeta debería ir una descripción.'}
+						description={'A través de la digitalización, diseñamos el espacio verde de tus sueños a todo el mundo.'}
 					/>
 
 					<FlipCard2
 						bg_image={'/images/inicio/inicio_proyectos_img6.png'}
-						title={'Tarde de talleres'}
-						description={'En esta parte de la tarjeta debería ir una descripción.'}
+						title={'Tardes de taller'}
+						description={'Espacio de co-creación de mujeres emprendedoras, donde convergen ideas, productos y talleres.'}
 					/>				
 					
 				</div>

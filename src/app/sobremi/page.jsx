@@ -1,6 +1,7 @@
 import React from 'react'
 import Image from 'next/image'
 import Card from '@/components/sobremi/Card'
+import CustomCarousel from '@/components/sobremi/CustomCarousel'
 
 const Sobremi = () => {
 
@@ -122,8 +123,11 @@ const Sobremi = () => {
 
 			</section>
 
-			<section id='gallery' className=''>
-				{/* PENDIENTE GALLERY */}
+			<section id="galeria" className='w-2/3 m-auto'>
+				<div className='flex flex-col'>
+					<span className='text-center text-h2 w-full font-merryweather font-bold'>Nuestra Galería</span>
+					<CustomCarousel />
+				</div>
 			</section>
 
         </div>

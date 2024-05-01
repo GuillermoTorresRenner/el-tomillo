@@ -23,6 +23,11 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="es">
+      <head>
+        <script defer="" src="https://cdn.tailwindcss.com"></script>
+      <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css"  rel="stylesheet" />
+
+      </head>
       <body className={`${merryweather.variable} ${urbanist.variable}`}>
         <Navbar />
         {children}
@@ -31,6 +36,7 @@ export default function RootLayout({ children }) {
       </body>
 
       <script defer="" src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon="{'token': '783d6bd8aeed4644afcd0266c25e069f'}"></script>
+      <script defer="" src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
 
     </html>
   );
