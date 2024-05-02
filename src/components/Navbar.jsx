@@ -16,36 +16,36 @@ export default function Navbar() {
   useEffect(() => {
     switch (path) {
       case "/":
-        setHeaderBGImage("/images/bg_img_inicio.png");
+        setHeaderBGImage("/images/navbar/bg_img_inicio.png");
         setIsHome(true);
         break;
 
       case "/sobremi":
-        setHeaderBGImage("/images/bg_img_sobre.png");
+        setHeaderBGImage("/images/navbar/bg_img_sobre.png");
         setHeaderBanner("Sobre mi");
         setIsHome(false);
         break;
 
       case "/servicios":
-        setHeaderBGImage("/images/bg_img_servicios.png");
+        setHeaderBGImage("/images/navbar/bg_img_servicios.png");
         setHeaderBanner("Servicios");
         setIsHome(false);
         break;
 
       case "/recursos":
-        setHeaderBGImage("/images/bg_img.jpeg");
+        setHeaderBGImage("/images/navbar/bg_img_recursos.png");
         setHeaderBanner("Recursos");
         setIsHome(false);
         break;
 
       case "/experiencias":
-        setHeaderBGImage("/images/bg_img_experiencias.png");
+        setHeaderBGImage("/images/navbar/bg_img_experiencias.png");
         setHeaderBanner("Experiencias y Talleres");
         setIsHome(false);
         break;
 
       default:
-        setHeaderBGImage("/images/bg_img.jpeg");
+        setHeaderBGImage("/images/navbar/bg_img_sobre.png");
         setIsHome(false);
     }
   }, [path]);
@@ -65,8 +65,8 @@ export default function Navbar() {
   const linkButtonClasses =
     "flex justify-center items-center border border-1 rounded-lg px-6 py-2 hover:border-primary hover:bg-secondary text-white text-caption hover:text-black";
 
-  const open_menu_icon = "/images/nav_menu_icon_open.png";
-  const close_menu_icon = "/images/nav_menu_icon_close.png";
+  const open_menu_icon = "/images/navbar/nav_menu_icon_open.png";
+  const close_menu_icon = "/images/navbar/nav_menu_icon_close.png";
 
   const [isOpen, setIsOpen] = useState(false);
 
@@ -90,13 +90,27 @@ export default function Navbar() {
       </div>
 
       {isHome ? (
+<<<<<<< HEAD
         <div className="absolute top-1/5 md:top-80 w-full h-full hidden sm:block">
           <h2 className="text-white text-center">Conexion con la naturaleza</h2>
           <h2 className="text-white text-center">al ritmo de la ciudad</h2>
+=======
+        <div className="absolute top-1/5 md:top-80 w-full h-full">
+          <h2 className="text-white text-h2 text-center">Conexion con la naturaleza</h2>
+          <h2 className="text-white text-h2 text-center">al ritmo de la ciudad</h2>
+          <div className="hidden md:flex justify-center gap-8">
+              <a href="/sobremi" target="_self" className='w-25 text-button text-primary font-urbanist bg-white hover:bg-secondary border border-white rounded rounded-lg px-6 py-2 my-2'>
+                <p className='text-center'>Conóceme</p>
+              </a>
+              <a href="/experiencias" target="_self" className=' w-25 text-button text-white hover:text-primary font-urbanist bg-black bg-opacity-25 hover:bg-secondary border border-white rounded rounded-lg px-6 py-2 my-2'>
+                <p className='text-center'>Experiencia y Talleres</p>
+              </a>
+          </div>
+>>>>>>> feat_page_sobremi
         </div>
       ) : (
         <div className="absolute top-28 hidden sm:block md:top-44 w-full h-full">
-          <h2 className="text-white text-center">{headerBanner}</h2>
+          <h2 className="text-white text-h2 text-center">{headerBanner}</h2>
         </div>
       )}
 
@@ -104,7 +118,7 @@ export default function Navbar() {
         {/* En vista desktop el logo es de color blanco  */}
         <Link className="hidden md:block relative mx-50" href="/">
           <Image
-            src={"/images/el_tomillo_header_img.png"}
+            src={"/images/navbar/el_tomillo_header_img.png"}
             width={90}
             height={90}
             alt="El Tomillo logo"
@@ -116,8 +130,8 @@ export default function Navbar() {
           <Image
             src={
               isOpen
-                ? "/images/el_tomillo_header_img.png"
-                : "/images/el_tomillo_header_img_green.png"
+                ? "/images/navbar/el_tomillo_header_img.png"
+                : "/images/navbar/el_tomillo_header_img_green.png"
             }
             width={90}
             height={90}
