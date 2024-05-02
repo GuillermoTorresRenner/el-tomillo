@@ -159,7 +159,10 @@ export default function Navbar() {
             </li>
 
             <li className="mx-4 my-2">
-              <Link href="#" className={linkButtonClasses}>
+              <Link
+                href="https://wa.me/5492615970583?text=Quiero%20saber%20m%C3%A1s%20del%20espacio%20agrourbano%20El%20Tomillo."
+                className={linkButtonClasses}
+              >
                 Contacto
               </Link>
             </li>

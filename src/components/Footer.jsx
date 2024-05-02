@@ -20,20 +20,23 @@ const Footer = () => {
             <h3 className="">Links</h3>
             <ul className="">
               <li>
-                <Link href="/">Sobre mí</Link>
+                <Link href="/">Home</Link>
+              </li>
+              <li>
+                <Link href="/sobremi">Sobre mí</Link>
               </li>
               <li>
                 <Link href="/servicios">Servicios</Link>
               </li>
               <li>
-                <Link href="/productos">Productos</Link>
+                <Link href="/experiencias">Talleres</Link>
               </li>
               <li>
-                <Link href="/actividades">Actividades</Link>
+                <Link href="/recursos">Recursos</Link>
               </li>
               <li>
                 <a
-                  href="https://wa.me/5492615970583?text=Quiero%20saber%20más%del%Tomillo"
+                  href="https://wa.me/5492615970583?text=Quiero%20saber%20m%C3%A1s%20del%20espacio%20agrourbano%20El%20Tomillo."
                   target="_blank"
                 >
                   Contacto
@@ -68,7 +71,7 @@ const Footer = () => {
                     <FaInstagram />
                   </a>
                   <a
-                    href="https://wa.me/5492615970583?text=Quiero%20saber%20más%del%Tomillo"
+                    href="https://wa.me/5492615970583?text=Quiero%20saber%20m%C3%A1s%20del%20espacio%20agrourbano%20El%20Tomillo."
                     target="_blank"
                   >
                     <FaWhatsapp />
@@ -114,7 +117,7 @@ const Footer = () => {
             <FaInstagram />
           </a>
           <a
-            href="https://wa.me/5492615970583?text=Quiero%20saber%20más%del%Tomillo"
+            href="https://wa.me/5492615970583?text=Quiero%20saber%20m%C3%A1s%20del%20espacio%20agrourbano%20El%20Tomillo."
             target="_blank"
           >
             <FaWhatsapp />

@@ -6,13 +6,13 @@ body{
   @apply font-urbanist text-h3 text-dark
 }
 h1{
-  @apply text-h1 font-bold font-merryweather text-primary
+  @apply text-h2 font-bold font-merryweather text-primary sm:text-h1
 }
 h2{
-  @apply text-h2 font-bold font-merryweather text-primary
+  @apply text-h2 font-bold font-merryweather text-primary sm:text-h3
 }
 h3{
-  @apply text-h3 font-bold font-merryweather text-primary
+  @apply text-sm font-bold font-merryweather text-primary sm:text-h3
 }
 
 .btn{
