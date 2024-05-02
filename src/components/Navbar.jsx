@@ -90,23 +90,29 @@ export default function Navbar() {
       </div>
 
       {isHome ? (
-<<<<<<< HEAD
-        <div className="absolute top-1/5 md:top-80 w-full h-full hidden sm:block">
-          <h2 className="text-white text-center">Conexion con la naturaleza</h2>
-          <h2 className="text-white text-center">al ritmo de la ciudad</h2>
-=======
         <div className="absolute top-1/5 md:top-80 w-full h-full">
-          <h2 className="text-white text-h2 text-center">Conexion con la naturaleza</h2>
-          <h2 className="text-white text-h2 text-center">al ritmo de la ciudad</h2>
+          <h2 className="text-white text-h2 text-center">
+            Conexion con la naturaleza
+          </h2>
+          <h2 className="text-white text-h2 text-center">
+            al ritmo de la ciudad
+          </h2>
           <div className="hidden md:flex justify-center gap-8">
-              <a href="/sobremi" target="_self" className='w-25 text-button text-primary font-urbanist bg-white hover:bg-secondary border border-white rounded rounded-lg px-6 py-2 my-2'>
-                <p className='text-center'>Conóceme</p>
-              </a>
-              <a href="/experiencias" target="_self" className=' w-25 text-button text-white hover:text-primary font-urbanist bg-black bg-opacity-25 hover:bg-secondary border border-white rounded rounded-lg px-6 py-2 my-2'>
-                <p className='text-center'>Experiencia y Talleres</p>
-              </a>
+            <a
+              href="/sobremi"
+              target="_self"
+              className="w-25 text-button text-primary font-urbanist bg-white hover:bg-secondary border border-white rounded rounded-lg px-6 py-2 my-2"
+            >
+              <p className="text-center">Conóceme</p>
+            </a>
+            <a
+              href="/experiencias"
+              target="_self"
+              className=" w-25 text-button text-white hover:text-primary font-urbanist bg-black bg-opacity-25 hover:bg-secondary border border-white rounded rounded-lg px-6 py-2 my-2"
+            >
+              <p className="text-center">Experiencia y Talleres</p>
+            </a>
           </div>
->>>>>>> feat_page_sobremi
         </div>
       ) : (
         <div className="absolute top-28 hidden sm:block md:top-44 w-full h-full">

@@ -1,3 +1,4 @@
+"use client";
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
@@ -20,7 +21,6 @@ const Footer = () => {
             <h3 className="">Links</h3>
             <ul className="">
               <li>
-
                 <Link href="/">Home</Link>
               </li>
               <li>
@@ -36,7 +36,6 @@ const Footer = () => {
                 <Link href="/recursos">Recursos</Link>
               </li>
               <li>
-
                 <a
                   href="https://wa.me/5492615970583?text=Quiero%20saber%20m%C3%A1s%20del%20espacio%20agrourbano%20El%20Tomillo."
                   target="_blank"
@@ -94,7 +93,7 @@ const Footer = () => {
                   src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d967.4691596649801!2d-68.82918511127046!3d-32.910865082893324!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x967e09435be0458f%3A0x4fd29179b16c884e!2sDorrego%201496%2C%20M5519%20Guaymall%C3%A9n%2C%20Mendoza%2C%20Argentina!5e0!3m2!1ses-419!2scl!4v1712905194214!5m2!1ses-419!2scl"
                   width="100%"
                   height="100%"
-                  allowfullscreen=""
+                  allowFullScreen=""
                   loading="lazy"
                   referrerpolicy="no-referrer-when-downgrade"
                 ></iframe>
