@@ -7,16 +7,7 @@ import Img3 from "../../../public/images/recursos/image_card_3.png";
 const Recursos = () => {
   return (
     <main className="mx-5 sm:mx-10">
-      <h1 className="mt-5 text-center ">
-        Descarga recursos gratis para nuca dejar de aprender
-      </h1>
-
-      <div className="flex justify-around border-2 rounded-2xl border-primary p-2  text-primary my-5">
-        <div>Experiencias y talleres</div>
-        <div>|</div>
-        <div className="font-bold">Recursos online</div>
-      </div>
-      <div className="">
+      <div className="pt-20">
         <Card
           src={Img1}
           alt={"Cómo comenzar a compostar"}
