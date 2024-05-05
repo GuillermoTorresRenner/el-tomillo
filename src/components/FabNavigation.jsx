@@ -1,12 +1,10 @@
 import React from "react";
 import { FaAngleUp } from "react-icons/fa";
 
-const FabNavigation = ({ visible = true }) => {
+const FabNavigation = () => {
   return (
     <div
-      className={`fixed bottom-24 right-5 border-2 border-secondary bg-primary text-white p-4 rounded-full shadow-xl hover:text-dark hover:border-primary hover:bg-secondary ${
-        visible ? "" : "hidden"
-      }`}
+      className="fixed bottom-24 right-5 border-2 border-secondary bg-primary text-white p-4 rounded-full shadow-xl hover:text-dark hover:border-primary hover:bg-secondary "
       style={{ zIndex: 9999 }}
     >
       <a href="#navbar">
