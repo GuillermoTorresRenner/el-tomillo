@@ -6,7 +6,7 @@ import Img3 from "../../../public/images/recursos/image_card_3.png";
 
 const Recursos = () => {
   return (
-    <main className="mx-5 sm:mx-10">
+    <main className="mx-5 sm:mx-10 px-10 md:px-20">
       <div className="pt-20">
         <Card
           src={Img1}
