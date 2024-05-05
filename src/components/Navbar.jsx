@@ -1,17 +1,22 @@
 "use client";
 
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
-import { useState } from "react";
 import { usePathname } from "next/navigation";
+import { useIntersectionObserver } from "@uidotdev/usehooks";
+import FabNavigation from "./FabNavigation";
 
 export default function Navbar() {
   const path = usePathname();
-
   const [headerBGImage, setHeaderBGImage] = useState();
   const [headerBanner, setHeaderBanner] = useState();
   const [isHome, setIsHome] = useState(true);
+  //Funciones para hacer visible el FAB cuando no se ve el navbar o para ocultarlo cuando éste sea visible
+  const [ref, entry] = useIntersectionObserver({
+    threshold: 0.5,
+    root: null,
+  });
 
   useEffect(() => {
     switch (path) {
@@ -75,129 +80,132 @@ export default function Navbar() {
   };
 
   return (
-    <div className="relative w-full " id="navbar">
-      <div>
-        <div className="block sm:hidden w-full h-[90px]" />
-        <div className="hidden sm:block">
-          <Image
-            className="brightness-50"
-            src={headerBGImage}
-            width={2000}
-            height={90}
-            alt="Background header"
-          />
-        </div>
-      </div>
-
-      {isHome ? (
-        <div className="absolute top-1/5 md:top-80 w-full h-full">
-          <h2 className="text-white text-h2 text-center">
-            Conexion con la naturaleza
-          </h2>
-          <h2 className="text-white text-h2 text-center">
-            al ritmo de la ciudad
-          </h2>
-          <div className="hidden md:flex justify-center gap-8">
-            <a
-              href="/sobremi"
-              target="_self"
-              className="w-25 text-button text-primary font-urbanist bg-white hover:bg-secondary border border-white rounded rounded-lg px-6 py-2 my-2"
-            >
-              <p className="text-center">Conóceme</p>
-            </a>
-            <a
-              href="/experiencias"
-              target="_self"
-              className=" w-25 text-button text-white hover:text-primary font-urbanist bg-black bg-opacity-25 hover:bg-secondary border border-white rounded rounded-lg px-6 py-2 my-2"
-            >
-              <p className="text-center">Experiencia y Talleres</p>
-            </a>
+    <>
+      <div className="relative w-full " id="navbar" ref={ref}>
+        <div>
+          <div className="block sm:hidden w-full h-[90px]" />
+          <div className="hidden sm:block">
+            <Image
+              className="brightness-50"
+              src={headerBGImage}
+              width={2000}
+              height={90}
+              alt="Background header"
+            />
           </div>
         </div>
-      ) : (
-        <div className="absolute top-28 hidden sm:block md:top-44 w-full h-full">
-          <h2 className="text-white text-h2 text-center">{headerBanner}</h2>
-        </div>
-      )}
 
-      <nav className={isOpen ? navClasses1 : navClasses2}>
-        {/* En vista desktop el logo es de color blanco  */}
-        <Link className="hidden md:block relative mx-50" href="/">
-          <Image
-            src={"/images/navbar/el_tomillo_header_img.png"}
-            width={90}
-            height={90}
-            alt="El Tomillo logo"
-          />
-        </Link>
-
-        {/* En vista mobile cambia de color segun la visibilidad del menu */}
-        <Link className="block md:hidden relative mx-50" href="/">
-          <Image
-            src={
-              isOpen
-                ? "/images/navbar/el_tomillo_header_img.png"
-                : "/images/navbar/el_tomillo_header_img_green.png"
-            }
-            width={90}
-            height={90}
-            alt="El Tomillo logo"
-          />
-        </Link>
-
-        <div>
-          <ul className={isOpen ? listClasses1 : listClasses2}>
-            <li className="mx-4 my-2">
-              <Link href={"/sobremi"} className={linkClasses}>
-                Sobre mi
-              </Link>
-            </li>
-
-            <li className="mx-4 my-2">
-              <Link href="/servicios" className={linkClasses}>
-                Servicios
-              </Link>
-            </li>
-
-            <li className="mx-4 my-2">
-              <Link href="/experiencias" className={linkClasses}>
-                Experiencia y Talleres
-              </Link>
-            </li>
-            <li className="mx-4 my-2">
-              <Link href="/recursos" className={linkClasses}>
-                Recursos
-              </Link>
-            </li>
-
-            <li className="mx-4 my-2">
-              <Link
-                href="https://wa.me/5492615970583?text=Quiero%20saber%20m%C3%A1s%20del%20espacio%20agrourbano%20El%20Tomillo."
-                className={linkButtonClasses}
+        {isHome ? (
+          <div className="absolute top-1/5 md:top-80 w-full h-full">
+            <h2 className="text-white text-h2 text-center">
+              Conexion con la naturaleza
+            </h2>
+            <h2 className="text-white text-h2 text-center">
+              al ritmo de la ciudad
+            </h2>
+            <div className="hidden md:flex justify-center gap-8">
+              <a
+                href="/sobremi"
+                target="_self"
+                className="w-25 text-button text-primary font-urbanist bg-white hover:bg-secondary border border-white rounded rounded-lg px-6 py-2 my-2"
               >
-                Contacto
-              </Link>
-            </li>
-          </ul>
-        </div>
+                <p className="text-center">Conóceme</p>
+              </a>
+              <a
+                href="/experiencias"
+                target="_self"
+                className=" w-25 text-button text-white hover:text-primary font-urbanist bg-black bg-opacity-25 hover:bg-secondary border border-white rounded rounded-lg px-6 py-2 my-2"
+              >
+                <p className="text-center">Experiencia y Talleres</p>
+              </a>
+            </div>
+          </div>
+        ) : (
+          <div className="absolute top-28 hidden sm:block md:top-44 w-full h-full">
+            <h2 className="text-white text-h2 text-center">{headerBanner}</h2>
+          </div>
+        )}
 
-        <div className="block md:hidden">
-          <button
-            type="button"
-            className="bg-[#EAE3C000] hover:bg-[#24292F]/90 rounded-lg text-sm px-.5 py-.5 dark:focus:ring-gray-500 dark:hover:bg-[#050708]/30"
-            onClick={() => {
-              toggleVisibility();
-            }}
-          >
+        <nav className={isOpen ? navClasses1 : navClasses2}>
+          {/* En vista desktop el logo es de color blanco  */}
+          <Link className="hidden md:block relative mx-50" href="/">
             <Image
-              src={isOpen ? close_menu_icon : open_menu_icon}
-              alt="menu_icon"
-              width={40}
-              height={40}
+              src={"/images/navbar/el_tomillo_header_img.png"}
+              width={90}
+              height={90}
+              alt="El Tomillo logo"
             />
-          </button>
-        </div>
-      </nav>
-    </div>
+          </Link>
+
+          {/* En vista mobile cambia de color segun la visibilidad del menu */}
+          <Link className="block md:hidden relative mx-50" href="/">
+            <Image
+              src={
+                isOpen
+                  ? "/images/navbar/el_tomillo_header_img.png"
+                  : "/images/navbar/el_tomillo_header_img_green.png"
+              }
+              width={90}
+              height={90}
+              alt="El Tomillo logo"
+            />
+          </Link>
+
+          <div>
+            <ul className={isOpen ? listClasses1 : listClasses2}>
+              <li className="mx-4 my-2">
+                <Link href={"/sobremi"} className={linkClasses}>
+                  Sobre mi
+                </Link>
+              </li>
+
+              <li className="mx-4 my-2">
+                <Link href="/servicios" className={linkClasses}>
+                  Servicios
+                </Link>
+              </li>
+
+              <li className="mx-4 my-2">
+                <Link href="/experiencias" className={linkClasses}>
+                  Experiencia y Talleres
+                </Link>
+              </li>
+              <li className="mx-4 my-2">
+                <Link href="/recursos" className={linkClasses}>
+                  Recursos
+                </Link>
+              </li>
+
+              <li className="mx-4 my-2">
+                <Link
+                  href="https://wa.me/5492615970583?text=Quiero%20saber%20m%C3%A1s%20del%20espacio%20agrourbano%20El%20Tomillo."
+                  className={linkButtonClasses}
+                >
+                  Contacto
+                </Link>
+              </li>
+            </ul>
+          </div>
+
+          <div className="block md:hidden">
+            <button
+              type="button"
+              className="bg-[#EAE3C000] hover:bg-[#24292F]/90 rounded-lg text-sm px-.5 py-.5 dark:focus:ring-gray-500 dark:hover:bg-[#050708]/30"
+              onClick={() => {
+                toggleVisibility();
+              }}
+            >
+              <Image
+                src={isOpen ? close_menu_icon : open_menu_icon}
+                alt="menu_icon"
+                width={40}
+                height={40}
+              />
+            </button>
+          </div>
+        </nav>
+      </div>
+      {!entry?.isIntersecting && <FabNavigation />}
+    </>
   );
 }

@@ -34,7 +34,7 @@ export default function RootLayout({ children }) {
       <body className={`${merryweather.variable} ${urbanist.variable}`}>
         <Navbar />
         {children}
-        <FabNavigation />
+
         <Footer />
       </body>
 
