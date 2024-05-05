@@ -9,7 +9,7 @@ import Img5 from "../../../public/images/experiencias/img_card_5.png";
 function Experiencia() {
   return (
     <main className="mx-5 sm:mx-10 pt-20">
-      <div className="sm:grid md:grid-cols-2 md:gap-2 mb-5 px-10 md:px-20">
+      <div className="sm:grid md:grid-cols-2 gap-x-5 sm:gap-x-10 mb-5 px-10 md:px-20">
         <Card
           src={Img1}
           alt={"La naturaleza en mí"}
