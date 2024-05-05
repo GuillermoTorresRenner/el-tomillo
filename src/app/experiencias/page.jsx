@@ -53,7 +53,7 @@ function Experiencia() {
       </div>
       <div className="flex justify-center mb-10 mt-5">
         <a
-          href="https://wa.me/5492615970583?text=Quiero%20saber%20más%del%Tomillo"
+          href="https://wa.me/5492615970583?text=Quiero%20saber%20m%C3%A1s%20del%20espacio%20agrourbano%20El%20Tomillo"
           className="bg-white border border-primary rounded-2xl py-2 px-4 w-auto max-w-xs text-center"
           target="_blank"
         >
