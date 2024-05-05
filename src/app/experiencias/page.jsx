@@ -8,21 +8,8 @@ import Img5 from "../../../public/images/experiencias/img_card_5.png";
 
 function Experiencia() {
   return (
-    <main className="mx-5 sm:mx-10">
-      <h1 className="mt-5 text-center ">
-        Vive una experiencia única con nuestros talleres
-      </h1>
-
-      <div className="flex justify-center">
-        <div className="w-1/2">
-          <div className="flex justify-around border-2 rounded-2xl border-primary p-2 text-primary my-5">
-            <div className="font-bold">Experiencias y talleres</div>
-            <div>|</div>
-            <div>Recursos online</div>
-          </div>
-        </div>
-      </div>
-      <div className="sm:grid md:grid-cols-2 md:gap-2 mb-5">
+    <main className="mx-5 sm:mx-10 pt-20">
+      <div className="sm:grid md:grid-cols-2 md:gap-2 mb-5 px-10 md:px-20">
         <Card
           src={Img1}
           alt={"La naturaleza en mí"}
