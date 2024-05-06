@@ -34,7 +34,7 @@ export default function RootLayout({ children }) {
       <body className={`${merryweather.variable} ${urbanist.variable}`}>
         <Navbar />
         {children}
-        <FabNavigation />
+
         <Footer />
       <script defer="" src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon="{'token': '783d6bd8aeed4644afcd0266c25e069f'}" ></script>
       <script defer="" src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js" ></script>

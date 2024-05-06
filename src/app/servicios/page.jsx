@@ -6,21 +6,7 @@ import viveroArteanal from "../../../public/images/servicios/vivero_artesanal.pn
 
 const Servicios = () => {
   return (
-    <main className="mx-5 sm:mx-10">
-      <h1 className="mt-5 text-center ">
-        Conoce los servicios exclusivos que realizamos
-      </h1>
-      {/* barra superior de categorias: */}
-      <div className="flex justify-around border-2 rounded-2xl border-primary p-2  text-primary my-5">
-        <div>Diseño de huertas urbanas</div>
-        <div>|</div>
-        <div className="hidden sm:block">Diseño de espacios verdes</div>
-        <div className="hidden sm:block">|</div>
-        <div className="hidden sm:block">Vivero artesanal</div>
-        <div className="hidden sm:block">|</div>
-        <div>Gestión de proyectos</div>
-      </div>
-
+    <main className="mx-5 sm:mx-10 pt-20">
       <Card
         alt={"Imagen diseño de hurtas urbanas"}
         src={huertaUrbanaImg}
