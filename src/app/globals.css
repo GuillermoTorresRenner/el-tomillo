@@ -50,3 +50,7 @@ h3 {
 .item .content{
   @apply px-8 py-2;
 }
+
+.slides:hover {
+  @apply transition-all ease-in duration-3000 md:duration-6000   
+}

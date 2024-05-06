@@ -3,6 +3,7 @@ import Image from "next/image";
 import FlipCard1 from "@/components/inicio/FlipCard1";
 import FlipCard2 from "@/components/inicio/FlipCard2";
 import AccordionGallery from "@/components/inicio/AccordionGallery";
+import ProductsCard from "@/components/inicio/ProductsCard";
 
 export default function Home() {
     return (
@@ -20,10 +21,7 @@ export default function Home() {
                 </span>
             </section>
 
-            <section
-                id="historia"
-                className='flex flex-col-reverse md:flex-row justify-center items-center bg-primary bg-[url("/images/leaf_pattern_light.svg")] bg-auto bg-repeat py-0 md:py-8 my-12'
-            >
+            <section id="historia" className='flex flex-col-reverse md:flex-row justify-center items-center bg-primary bg-[url("/images/leaf_pattern_light.svg")] bg-auto bg-repeat py-0 md:py-8 my-12' >
                 {/* Div caption */}
                 <div className="flex flex-col justify-center items-center md:items-start my-8 px-12 w-full md:w-1/2">
                     <span className="text-primary text-start text-h2 font-merryweather font-bold mx-4 my-4 md:mx-0">
@@ -54,11 +52,7 @@ export default function Home() {
                     </span>
 
                     <div className="flex justify-center md:justify-start items-center">
-                        <a
-                            href="/sobremi"
-                            target="_self"
-                            className="block w-full sm:w-3/5 md:w-2/4 text-button font-urbanist hover:text-primary bg-transparent hover:bg-secondary border border-primary  rounded-lg mx-auto px-6 py-2 my-2"
-                        >
+                        <a href="/sobremi" target="_self" className="block text-button font-urbanist hover:text-primary bg-transparent hover:bg-secondary border border-primary  rounded-lg mx-auto px-6 py-2 my-2" >
                             <p className="text-center">Conocer más</p>
                         </a>
                     </div>
@@ -119,23 +113,18 @@ export default function Home() {
                     </a>
                 </div>
             </section>
+            {/* Section - Productos */}
+            <section>
+                <ProductsCard/>
+            </section>
 
-            <section
-                id="experiencia"
-                className="hidden md:block relative my-6 overflow-hidden"
-            >
-                <Image
-                    src="/images/inicio/inicio_vive_una_experiencia.png"
-                    alt=""
-                    width={1900}
-                    height={600}
-                />
+            <section id="experiencia" className="hidden md:block relative my-6 overflow-hidden" >
+                <Image src="/images/inicio/inicio_vive_una_experiencia.png" alt="" width={1900} height={600} />
                 <div className="absolute w-full sm:w-3/4 md:w-2/5 -bottom-5 right-0 bg-primary opacity-90 flex flex-col p-16 rounded rounded-s-3xl">
                     <span className="text-white text-subhead md:text-h2 font-merryweather font-bold">
                         Vive una experiencia única con nuestros talleres
                     </span>
-                    <a href="/experiencias" target="_self" className="text-button text-white hover:text-primary font-urbanist bg-transparent hover:bg-secondary border border-white  rounded-lg mx-auto px-6 py-2 my-2"
-                    >
+                    <a href="/experiencias" target="_self" className="text-button text-white hover:text-primary font-urbanist bg-transparent hover:bg-secondary border border-white  rounded-lg mx-auto px-6 py-2 my-2" >
                         <p className="text-center">Más información</p>
                     </a>
                 </div>
@@ -173,33 +162,25 @@ export default function Home() {
                     <FlipCard2
                         bg_image={"/images/inicio/inicio_proyectos_img3.png"}
                         title={"Mi mundo verde"}
-                        description={
-                            "Te compartiré pequeños tips para que puedas llevar una vida más sustentable, aun en la ciudad."
-                        }
+                        description={ "Te compartiré pequeños tips para que puedas llevar una vida más sustentable, aun en la ciudad." }
                     />
 
                     <FlipCard2
                         bg_image={"/images/inicio/inicio_proyectos_img4.png"}
                         title={"Paneles verticales"}
-                        description={
-                            'Bajo el lema "Menos plástico...Más Vida". Disponé de Naturaleza inmediata y tomá conciencia de la importancia de la reutilización del plastico.'
-                        }
+                        description={ 'Bajo el lema "Menos plástico...Más Vida". Disponé de Naturaleza inmediata y tomá conciencia de la importancia de la reutilización del plastico.' }
                     />
 
                     <FlipCard2
                         bg_image={"/images/inicio/inicio_proyectos_img5.png"}
                         title={"Naturaleza online"}
-                        description={
-                            "A través de la digitalización, diseñamos el espacio verde de tus sueños a todo el mundo."
-                        }
+                        description={ "A través de la digitalización, diseñamos el espacio verde de tus sueños a todo el mundo." }
                     />
 
                     <FlipCard2
                         bg_image={"/images/inicio/inicio_proyectos_img6.png"}
                         title={"Tardes de taller"}
-                        description={
-                            "Espacio de co-creación de mujeres emprendedoras, donde convergen ideas, productos y talleres."
-                        }
+                        description={ "Espacio de co-creación de mujeres emprendedoras, donde convergen ideas, productos y talleres." }
                     />
                 </div>
 
