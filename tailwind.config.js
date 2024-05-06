@@ -28,6 +28,11 @@ module.exports = {
         caption: "1rem",
         button: "1.5rem",
       },
+      transitionDuration: {
+        '2000': '2000ms',
+        '3000': '3000ms',
+        '6000': '6000ms',
+      }
     },
   },
   plugins: [],
