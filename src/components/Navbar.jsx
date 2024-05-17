@@ -110,7 +110,7 @@ export default function Navbar() {
               target="_self"
               className="w-25 text-button text-primary font-urbanist bg-white hover:bg-secondary border border-white rounded rounded-lg px-6 py-2 my-2"
             >
-              <p className="text-center">Conóceme</p>
+              <p className="text-center">Conoceme</p>
             </a>
             <a
               href="/experiencias"
