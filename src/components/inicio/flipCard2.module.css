@@ -6,7 +6,7 @@
     position: relative;
     width: 25rem;
     height: 25rem;
-    transition: transform 1.3s;
+    transition: transform .8s;
     transform-style: preserve-3d;
     border-radius: 13px;
 }
