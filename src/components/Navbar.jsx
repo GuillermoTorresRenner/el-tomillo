@@ -23,7 +23,7 @@ export default function Navbar() {
 
       case "/sobremi":
         setHeaderBGImage("/images/navbar/bg_img_sobre.png");
-        setHeaderBanner("Sobre mi");
+        setHeaderBanner("Sobre mí");
         setIsHome(false);
         break;
 
