@@ -155,7 +155,7 @@ export default function Navbar() {
             <ul className={isOpen ? listClasses1 : listClasses2}>
               <li className="mx-4 my-2">
                 <Link href={"/sobremi"} className={linkClasses}>
-                  Sobre mi
+                  Sobre mí
                 </Link>
               </li>
 

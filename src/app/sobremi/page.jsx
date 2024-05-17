@@ -53,7 +53,7 @@ const Sobremi = () => {
 
           <div className="w-full flex justify-center md:justify-start items-center">
             <button className="hidden md:block w-56 bg-white hover:bg-neutral border border-primary rounded px-3 py-1 my-2">
-              <p>Te cuento un poco sobre mi</p>
+              <p>Te cuento un poco sobre mí</p>
             </button>
           </div>
 
