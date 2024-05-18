@@ -99,7 +99,7 @@ export default function Navbar() {
       {isHome ? (
         <div className="hidden md:block absolute top-20 md:top-[40%] w-full h-full">
           <h2 className="text-white text-h2 text-center">
-            Conexion con la naturaleza
+            Conexión con la naturaleza
           </h2>
           <h2 className="text-white text-h2 text-center">
             al ritmo de la ciudad

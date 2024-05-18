@@ -10,7 +10,7 @@ const Servicios = () => {
       <Card
         alt={"Imagen diseño de hurtas urbanas"}
         src={huertaUrbanaImg}
-        title={"Diseño de huerta urbana"}
+        title={"Diseño de huertas urbanas"}
         subtitle={
           "Gestión proyectos de agricultura urbana en el ámbito público y privado."
         }

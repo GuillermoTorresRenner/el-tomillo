@@ -8,8 +8,8 @@ const Card = ({ src, alt, title, text }) => {
         <Image src={src} alt={alt} className="w-full h-full object-cover" />
       </div>
       <div className="px-10 py-5 md:py-10">
-        <h2 className="text-center text-xl font-bold">{title}</h2>
-        <p className="text-center text-sm mt-3">{text}</p>
+        <h2 className="text-center text-3xl font-bold">{title}</h2>
+        <p className="text-center text-[22px] mt-3">{text}</p>
       </div>
     </div>
   );
