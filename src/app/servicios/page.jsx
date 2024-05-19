@@ -32,7 +32,7 @@ const Servicios = () => {
           "Diseñamos jardines residenciales con una impronta ecológica de acuerdo a tu espacio y necesidades. Priorizamos el cuidado del ambiente en cada diseño y te asesoramos en la selección de plantas, macetas y otras decoraciones; buscando la mejor distribución de especies para que las plantas permanezcan sanas y vibrantes de manera orgánica. "
         }
         list={[
-          "¿Qué incluye? Gestión del diseño y para la posterior ejecución.",
+          "¿Qué incluye? Gestión del diseño para la posterior ejecución.",
           "¿Cuánto tiempo toma? Dependiendo del tamaño del proyecto.",
           "¿En dónde? Ciudad de Mendoza y alrededores.",
         ]}
